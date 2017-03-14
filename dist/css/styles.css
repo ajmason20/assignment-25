@@ -1,8 +1,154 @@
 * {
   box-sizing: border-box; }
 
+body {
+  font-family: Helvetica; }
+
 img {
   width: 100%;
   display: block; }
+
+h1 {
+  text-align: center;
+  font-size: 10vw;
+  color: #2574A9; }
+
+.nav-bar button {
+  padding: 12px 20px;
+  background-color: #0082B4;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border: none;
+  border-radius: 8px; }
+
+.nav-bar {
+  width: 100%;
+  border-bottom: solid thin #bbb;
+  padding: 10px 0; }
+
+.home-page {
+  background-image: url(../images/max-boettinger-109436.jpg);
+  background-size: cover;
+  color: #fff;
+  height: 1000px;
+  position: relative; }
+
+.home-page > * {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top; }
+
+.home-text {
+  width: 30%;
+  margin-left: 17%;
+  font-size: medium; }
+
+.new-user-container {
+  font-size: medium;
+  background-color: #fff;
+  color: #0082B4;
+  width: 40%;
+  border: solid thin white;
+  border-radius: 10px;
+  padding: 0 16px 16px 16px;
+  margin-top: 50px; }
+
+.new-user-container h3 {
+  border-bottom: solid thin #bbb;
+  text-align: center;
+  padding-bottom: 8px; }
+
+.new-user-container button {
+  margin-top: 12px; }
+
+.user-login-container button {
+  margin-left: 12px; }
+
+.user-login-container {
+  font-size: medium;
+  background-color: #fff;
+  color: #0082B4;
+  width: 40%;
+  border: solid thin white;
+  border-radius: 10px;
+  padding: 0 16px 16px 16px; }
+
+.user-login-container h3 {
+  border-bottom: solid thin #bbb;
+  text-align: center;
+  padding-bottom: 8px; }
+
+.login-comps {
+  margin-left: 2%; }
+
+.signup-page {
+  background-image: url(../images/chirp-logo.png);
+  background-size: auto;
+  height: 1000px; }
+
+.signup-container {
+  margin-top: 60px;
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: solid medium #bbb;
+  border-radius: 10px;
+  padding: 30px 50px 50px 50px; }
+
+.signup-container h2 {
+  font-weight: lighter; }
+
+.signup-container input {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  font-size: 18px; }
+
+.signup-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 24px;
+  background-color: #0082B4;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px; }
+
+.login-page {
+  background-color: #f4f4f4;
+  height: 1000px;
+  padding-top: 10px; }
+
+.login-container {
+  margin-top: 60px;
+  max-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: solid medium #bbb;
+  border-radius: 10px;
+  padding: 30px 50px 50px 50px; }
+
+.login-container h2 {
+  font-weight: lighter; }
+
+.login-container input {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  font-size: 18px; }
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 24px;
+  background-color: #0082B4;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map*/
