@@ -2,21 +2,21 @@ import React from 'react';
 import {ACTIONS} from '../actions.js';
 
 export const NavComponent = React.createClass({
+
     _getMenuOptions: function(currentUserOnStore){
       let routeList = []
       if (typeof currentUserOnStore._id === 'undefined'){
         routeList = [
-          {appRouteName: 'home', hashRoute: ''},
-          {appRouteName: 'chirps', hashRoute: 'chirps'},
-          {appRouteName: 'login', hashRoute: 'login'},
-          {appRouteName: 'register', hashRoute: 'register'}
+          {appRouteName: 'home', showText: 'home', hashRoute: ''},
+          {appRouteName: 'chirps', showText: 'chirps', hashRoute: 'chirps'},
+          {appRouteName: 'login', showText: 'login', hashRoute: 'login'},
+          {appRouteName: 'register', showText: 'register', hashRoute: 'register'}
         ]
       } else {
         routeList = [
-          {appRouteName: 'home', hashRoute: ''},
-          {appRouteName: 'chirps', hashRoute: 'chirps'},
-          {appRouteName: 'logout', hashRoute: 'logout'}
-
+          {appRouteName: 'home', showText: 'home', hashRoute: ''},
+          {appRouteName: 'chirps', showText: 'chirps', hashRoute: 'chirps'},
+          {appRouteName: 'logout', showText: 'logout', hashRoute: 'login'}
         ]
       }
       return routeList
@@ -45,7 +45,6 @@ export const NavComponent = React.createClass({
 
   _handleNavClick: function(evt){
     console.log(this.props)
-    // window.location.hash = evt.target.dataset.route
     ACTIONS.changeCurrentNav(this.props.appRouteName, this.props.hashRoute)
   },
 
@@ -53,7 +52,7 @@ export const NavComponent = React.createClass({
 
     return (
 
-        <button data-route={this.props.hashRoute} onClick={this._handleNavClick}>
+        <button data-text={this.props.showText} onClick={this._handleNavClick}>
           {this.props.appRouteName}
         </button>
     )

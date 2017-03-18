@@ -6,6 +6,18 @@ import {NavComponent} from '../components/component-nav.js'
 
 export const RegisterComponent = React.createClass({
 
+  _handleNewUser: function(evt){
+    evt.preventDefault();
+    let formEl = evt.target
+    let formValObj = {
+      username : formEl.userName.value,
+      personalName : formEl.personalName.value,
+      password : formEl.password.value,
+      avatarUrl : formEl.avatarUrl.value
+    }
+    ACTIONS.registerNewUser(formValObj)
+  },
+  
   render: function(){
     return (
       <div>
@@ -23,18 +35,7 @@ export const RegisterComponent = React.createClass({
       </form>
       </div>
     )
-  },
-
-  _handleNewUser: function(evt){
-    evt.preventDefault();
-    let formEl = evt.target
-    let formValObj = {
-      username : formEl.userName.value,
-      personalName : formEl.personalName.value,
-      password : formEl.password.value,
-      avatarUrl : formEl.avatarUrl.value
-    }
-    ACTIONS.registerNewUser(formValObj)
   }
+
 
 })

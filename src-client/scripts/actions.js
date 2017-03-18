@@ -33,7 +33,7 @@ export const ACTIONS = {
   },
 
   userLogIn: function(user, password){
-    UserModel.login(user, password).then( function(serverRes){
+    UserModel.logIn(user, password).then( function(serverRes){
       STORE.setStore('currentUser', serverRes)
       ACTIONS.changeCurrentNav('login', 'login')
     })

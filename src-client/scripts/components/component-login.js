@@ -1,4 +1,5 @@
 import React from 'react';
+import {STORE} from '../store.js'
 import {ACTIONS} from '../actions.js'
 
 
@@ -6,7 +7,7 @@ export const UserLoginComponent = React.createClass({
 
   _handleLogIn: function(evt){
     evt.preventDefault();
-    let formEl = evt.targert
+    let formEl = evt.target
     let userVal = formEl.userNameField.value
     let pwVal = formEl.passwordField.value
     ACTIONS.userLogIn(userVal, pwVal)
@@ -19,7 +20,7 @@ export const UserLoginComponent = React.createClass({
           <div className="login-container">
             <form onSubmit={this._handleLogIn}>
               <h2>Log in to Chirp</h2>
-              <input type="text" placeholder="Email" name="userNameField"/>
+              <input type="text" placeholder="User Name" name="userNameField"/>
               <input type="password" placeholder="Password" name="passwordField"/>
               <button type="submit">Log In</button>
             </form>

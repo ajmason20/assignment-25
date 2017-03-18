@@ -21,12 +21,16 @@ h1 {
   margin-left: 12px;
   margin-right: 12px;
   border: none;
-  border-radius: 8px; }
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: top; }
 
 .nav-bar {
   width: 100%;
-  border-bottom: solid thin #bbb;
-  padding: 10px 0; }
+  border-bottom: solid medium #50E3C2;
+  padding: 10px 0;
+  display: inline-block;
+  vertical-align: top; }
 
 .home-page {
   background-image: url(../images/max-boettinger-109436.jpg);
@@ -128,7 +132,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
-  border: solid medium #bbb;
+  border: solid medium #50E3C2;
   border-radius: 10px;
   padding: 30px 50px 50px 50px; }
 
@@ -150,5 +154,52 @@ h1 {
   font-size: 18px;
   border: none;
   border-radius: 10px; }
+
+.new-chirp-container {
+  width: 30%;
+  background-color: #fff;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid medium #50E3C2;
+  border-radius: 10px;
+  padding: 50px; }
+
+.new-chirp-container input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px; }
+
+.new-chirp-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 24px;
+  background-color: #0082B4;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px; }
+
+.chirps-container {
+  max-width: 40%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.chirps-container h2 {
+  margin-left: 5%; }
+
+.single-chirp img {
+  width: 100%; }
+
+.single-chirp {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
+
+.chirps-page-container {
+  background-color: #f4f4f4;
+  padding-top: 10px; }
 
 /*# sourceMappingURL=styles.css.map*/
